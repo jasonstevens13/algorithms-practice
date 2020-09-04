@@ -1,17 +1,17 @@
 var expect = chai.expect;
 
-before(function() {
+before(function () {
   window._temp = {};
   window._temp.log = console.log;
-  window.console.log = (function(...args) {
+  window.console.log = (function (...args) {
     var values = [];
 
-    var log = function(args) {
+    var log = function (args) {
       values.push(args);
       window._temp.log(args);
     };
 
-    log.calledWith = function() {
+    log.calledWith = function () {
       return values;
     };
 
@@ -19,8 +19,8 @@ before(function() {
   })();
 });
 
-describe("logEvenNums", function() {
-  it("log even numbers 0 through `num`", function() {
+describe("logEvenNums", function () {
+  it("log even numbers 0 through `num`", function () {
     var num = 13;
 
     logEvenNums(num);
@@ -29,7 +29,7 @@ describe("logEvenNums", function() {
   });
 });
 
-after(function() {
+after(function () {
   console.log = window._temp.log;
   delete window._temp;
 });
