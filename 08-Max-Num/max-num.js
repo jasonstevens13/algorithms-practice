@@ -1,6 +1,6 @@
 // Write code to return the largest number in the given array
 
-var maxNum = function (arr) {
+const maxNum = function (arr) {
     // I thought I could use Math.max here, as this was at the forefrot of my mind after reading Chapter 2 of Eloquent JavaScript.
 
     // console.log(Math.max(arr));

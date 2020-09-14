@@ -1,6 +1,6 @@
 // Write code that returns true if `str` is a palindrome, and false if `str` is not a palindrome
 
-var isPalindrome = function (str) {
+const isPalindrome = function (str) {
 
     // I remember reviewing this one in our bootcamp. We compared first and last char and then moved in with each iteration.
     // And I believe I remember another way was to reverse the whole str and compare to original

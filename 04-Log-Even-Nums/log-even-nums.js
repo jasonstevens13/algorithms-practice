@@ -1,7 +1,7 @@
 // Write code to print all even numbers from 0 to `num`
 // Assume `num` will be a positive number
 
-var logEvenNums = function (num) {
+const logEvenNums = function (num) {
 
     // I will look through JS dev docs to see if there is method for this specifically; or for a number range
     for (let i = 0; i <= num; i += 2) {
