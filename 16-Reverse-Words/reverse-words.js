@@ -6,15 +6,24 @@ const reverseWords = function (str) {
     // take new aray and swap out index position....push to a new array
     // then rejoin the words and return new string
 
+    // let words = str.split(' ');
+    // let reversedWordsArray = [];
+
+    // for (let i = words.length - 1; i >= 0; i--) {
+    //     const word = words[i];
+    //     reversedWordsArray.push(word);
+    // }
+
+    // let reversedStr = reversedWordsArray.join(' ');
+    // return reversedStr
+
+
+    // AFTER SOLVING WITH ABOVE LOOP, I found the solved has a cleaner approach using the 'reverse' method
+    // solved now looks like this:
+
+
     let words = str.split(' ');
-    let reversedWordsArray = [];
+    let reversedWords = words.reverse();
 
-    for (let i = words.length - 1; i >= 0; i--) {
-        const word = words[i];
-        reversedWordsArray.push(word);
-    }
-
-    let reversedStr = reversedWordsArray.join(' ');
-    return reversedStr
-
+    return reversedWords.join(" ");
 };
