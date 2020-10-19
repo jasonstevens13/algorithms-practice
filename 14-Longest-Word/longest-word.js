@@ -1,6 +1,6 @@
 // Write code to create a function that accepts a string (`str`) and returns the longest word in the string
 
-var longestWord = function (str) {
+const longestWord = function (str) {
 
     // Take in str and split by spaces to create an array of words
     // Then taake each word and count chars
