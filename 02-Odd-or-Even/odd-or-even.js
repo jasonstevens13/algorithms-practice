@@ -8,7 +8,7 @@
 // The above tutorial reminded me that the modulus % operator in Javscript tells us whether there is a whole number remainder.
 // Since we are dividing the num by 2, if 0 remainder than it is even, else it's odd. 
 
-var oddOrEven = function (num) {
+const oddOrEven = function (num) {
 
     if (num % 2 == 0) {
         return 'even'
