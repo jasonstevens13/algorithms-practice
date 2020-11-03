@@ -14,21 +14,28 @@ const isAnagram = function (strA, strB) {
 
     for (const char of strA) {
 
-        if (objA.hasOwnProperty(char)) {
-            objA[char]++;
-        } else {
-            objA[char] = 1;
-        }
+        // Found solved solution with the improved/abbreviated syntax to replace the if/else
+
+        // if (objA.hasOwnProperty(char)) {
+        //     objA[char]++;
+        // } else {
+        //     objA[char] = 1;
+        // }
+
+        objA[char] = (objA[char] || 0) + 1
+
     };
 
 
     for (const char of strB) {
 
-        if (objB.hasOwnProperty(char)) {
-            objB[char]++;
-        } else {
-            objB[char] = 1;
-        }
+        // if (objB.hasOwnProperty(char)) {
+        //     objB[char]++;
+        // } else {
+        //     objB[char] = 1;
+        // }
+
+        objB[char] = (objB[char] || 0) + 1
     };
 
 
