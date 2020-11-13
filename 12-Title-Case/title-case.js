@@ -21,7 +21,7 @@ const titleCase = function (str) {
 
     return cappedStr.join(" ");
 
-    // I am being reminded that the join method with not add a space at the end of a string.
+    // I am being reminded that the join method will not add a space at the end of a string.
     // At first I started to code an 'if' condition that was adding the new capitalized word to a string plus a space
     // unless it was the last word in the iteration, which I was just going to add the word with no space.
     // I instead referred to secondary materials to find that join took care of this by using it once in the loop and once to return final string from the array of words.
