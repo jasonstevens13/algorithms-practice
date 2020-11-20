@@ -2,19 +2,23 @@
 // Each number represents the duration of a song in minutes
 // Return the maximum number of songs from the array that can fit in a 60 minute playlist
 
-var noMoreThanPrevious = function(str) {
-  var letterCount = {};
+var mostSongsInPlaylist = function (arr) {
 
-  var currentLetter = arr[0];
-  var prevLetter;
-  for (var i = 1; i < str.length; i++) {
-    var letter = str[i];
-    letterCount[letter] = (letterCount[letter] || 0) + 1;
+  let arrSorted = arr.sort();
+  let sumDurations = 0;
+  let count = 0;
 
-    if (prevLetter) {
-      if (letterCount[letter] > letterCount[letter]) {
-        return false;
-      }
+  arrSorted.forEach(song => {
+    sumDurations = sumDurations + song;
+
+    if (sumDurations <= 60) {
+      count++
+    } else {
+      return count
     }
-  }
+  });
+
+  return count
+
+
 };
